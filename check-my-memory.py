@@ -15,7 +15,7 @@ import string, os, sys
 # 2013-02-22: Handle new format of /var/log/dmesg in Linux 3.5. Typo solved. And another type
 # 2023-08-15: python3, dmesg format of linux 6.2
 
-print(sys.argv[0], "- version: SJ 2023-08-15")
+print(sys.argv[0], "- version: SJ 2025-04-13")
 
 if os.popen("whoami").readline().strip() == "root":
     print("OK, you're root")
