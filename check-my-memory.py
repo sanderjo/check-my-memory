@@ -247,7 +247,7 @@ if root:
 
 if root:
     print("\nFinally: show more detailed memory info from lshw. This can take up to 30 seconds ...")
-    cmd = 'lshw -class memory |  grep -i "\-memory" -A100 | grep -i -e capacity -e description -e size'
+    cmd = r'lshw -class memory |  grep -i "\-memory" -A100 | grep -i -e capacity -e description -e size'
     for thisline in os.popen(cmd).readlines():
         print(thisline, end=" ")
 
